@@ -10,11 +10,10 @@ PATH = "C:\Program Files (x86)\ChromeDriver\chromedriver.exe"
 
 driver = webdriver.Chrome(PATH)
 
-RTX3070LINK1 = "https://www.bestbuy.com/site/nvidia-geforce-rtx-3070-8gb-gddr6-pci-express-4-0-graphics-card-dark-platinum-and-black/6429442.p?skuId=6429442"
-RTX3070LINK2 = "https://www.bestbuy.com/site/gigabyte-geforce-rtx-3070-8g-gddr6-pci-express-4-0-graphics-card-black/6437912.p?skuId=6437912"
-XBOXONETEST = "https://www.bestbuy.com/site/microsoft-xbox-one-s-1tb-console-bundle-white/6415222.p?skuId=6415222"
+RTX5090LINK1 = "https://www.bestbuy.com/site/nvidia-geforce-rtx-5090-32gb-gddr7-graphics-card-dark-gun-metal/6614151.p?skuId=6614151"
+TEST = ""
 
-driver.get(RTX3070LINK1)
+driver.get(RTX5090LINK1)
 
 isComplete = False
 
@@ -77,7 +76,7 @@ while not isComplete:
         isComplete = True
     except:
         # make sure this link is the same as the link passed to driver.get() before looping
-        driver.get(RTX3070LINK1)
+        driver.get(RTX5090LINK1)
         print("Error - restarting bot")
         continue
 
